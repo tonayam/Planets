@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(./images/bg.jpg);
+  color: white;
+}
+
+.planet-cont {
+  height: 100vh;
+  border-radius: 0 50% 50% 0;
+  background: rgba(40, 40, 41, 0.5);
+}
+
+.planet-details {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.details {
+  background: rgba(40, 40, 41, 0.5);
+}
+.planet {
+  height: 60%;
+  width: 70%;
+  border-radius: 50%;
+}
+
+.diameter {
+  display: none;
+}
+.show-details {
+  display: block;
+}
+.bi {
+  cursor: pointer;
+  color: aqua;
+  transition: 0.5s linear all;
+}
+.bi:hover {
+  transform: scale(1.1);
+  color: white;
+}
+
+@media screen and (max-width: 500px) {
+  .planet-cont {
+    height: 40vh;
+    border-radius: 0 0% 0% 0;
+    background: none;
+  }
+  .planet {
+    height: 60%;
+    width: 60%;
+    border-radius: 50%;
+  }
+  .diameter {
+    display: block;
+  }
+  .planet-details {
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+  }
+}
